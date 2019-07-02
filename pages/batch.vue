@@ -2,13 +2,14 @@
   <b-container class="text-left theme-container">
     <b-form-group
       label-class="font-weight-bold pt-0"
-      class="mb-0"
+      class="mb-0 form-container"
     >
       <b-form-group
         label-cols-sm="2"
         label="搜索关键词"
         label-align-sm="right"
         label-for="nested-city"
+        class="alert-lable"
       >
         <b-form-input id="nested-city" placeholder="关键词"></b-form-input>
       </b-form-group>
@@ -18,6 +19,7 @@
         label="淘宝商品ID"
         label-align-sm="right"
         label-for="nested-state"
+        class="alert-lable"
       >
         <b-form-input id="nested-state" placeholder="淘宝商品ID"></b-form-input>
       </b-form-group>
@@ -27,6 +29,7 @@
         label="淘宝会员名"
         label-align-sm="right"
         label-for="nested-country"
+        class="alert-lable"
       >
         <b-form-textarea
           id="textarea"
@@ -85,6 +88,9 @@ ol {
 }
 .notice {
   color: #999;
+}
+.form-container {
+  width: 100%;
 }
 </style>
 

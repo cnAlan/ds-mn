@@ -11,4 +11,17 @@ body {
   min-height: auto!important;
   margin-top: 20px!important;
   padding-top: 20px;
+  justify-content: normal!important;
+}
+.jumbotron.block {
+  padding: 10px 30px;
+}
+.form-container {
+  width: 100%;
+}
+
+.alert-lable label::before{
+  content: '*';
+  color: red;
+  padding-right: 5px;
 }
