@@ -6,29 +6,38 @@
     >
       <b-form-group
         label-cols-sm="2"
-        label="旺旺号"
+        label="搜索关键词"
         label-align-sm="right"
         label-for="nested-city"
       >
-        <b-form-input id="nested-city"></b-form-input>
+        <b-form-input id="nested-city" placeholder="关键词"></b-form-input>
       </b-form-group>
 
       <b-form-group
         label-cols-sm="2"
-        label="商品地址"
+        label="淘宝商品ID"
         label-align-sm="right"
         label-for="nested-state"
       >
-        <b-form-input id="nested-state" placeholder="商品的淘宝地址：http://xxx"></b-form-input>
+        <b-form-input id="nested-state" placeholder="淘宝商品ID"></b-form-input>
       </b-form-group>
 
       <b-form-group
         label-cols-sm="2"
-        label="搜索关键词"
+        label="淘宝会员名1"
         label-align-sm="right"
         label-for="nested-country"
       >
-        <b-form-input id="nested-country" placeholder="关键词需存在于宝贝标题中"></b-form-input>
+        <b-form-input id="nested-country" placeholder="淘宝旺旺账号1"></b-form-input>
+      </b-form-group>
+
+      <b-form-group
+        label-cols-sm="2"
+        label="淘宝会员名2"
+        label-align-sm="right"
+        label-for="nested-country"
+      >
+        <b-form-input id="nested-country" placeholder="淘宝旺旺账号2"></b-form-input>
       </b-form-group>
 
       <b-form-group
@@ -36,7 +45,7 @@
         label-align-sm="right"
         label-for="nested-country"
       >
-        <b-button variant="primary">提交</b-button>
+        <b-button variant="primary">打标</b-button>
       </b-form-group>
 
 
@@ -62,13 +71,8 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-
-    }
-  },
   mounted() {
-    this.$store.commit('setNavigate', 'marking');
+    this.$store.commit('setNavigate', 'batch');
   }
 }
 </script>
@@ -86,3 +90,4 @@ ol {
   color: #999;
 }
 </style>
+
