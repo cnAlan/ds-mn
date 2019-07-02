@@ -24,20 +24,17 @@
 
       <b-form-group
         label-cols-sm="2"
-        label="淘宝会员名1"
+        label="淘宝会员名"
         label-align-sm="right"
         label-for="nested-country"
       >
-        <b-form-input id="nested-country" placeholder="淘宝旺旺账号1"></b-form-input>
-      </b-form-group>
-
-      <b-form-group
-        label-cols-sm="2"
-        label="淘宝会员名2"
-        label-align-sm="right"
-        label-for="nested-country"
-      >
-        <b-form-input id="nested-country" placeholder="淘宝旺旺账号2"></b-form-input>
+        <b-form-textarea
+          id="textarea"
+          v-model="text"
+          placeholder="请输入淘宝会员名"
+          rows="3"
+          max-rows="6"
+        ></b-form-textarea>
       </b-form-group>
 
       <b-form-group
