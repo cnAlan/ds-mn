@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #ededed;
+}
+.theme-container {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px 10%;
+  width: 80%;
+  margin: auto;
+}
